@@ -1,0 +1,100 @@
+
+# Inverted Spectrum — Decap CMS
+
+backend:
+  name: github
+  repo: YOUR_USERNAME/YOUR_REPOSITORY
+  branch: main
+
+# 上傳圖片的位置
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+# 後台語言
+locale: zh_Hant
+
+collections:
+  # 正片截取
+  - name: "excerpts"
+    label: "正片截取"
+    folder: "content/excerpts"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "標題", name: "title", widget: "string" }
+      - label: "世界線"
+        name: "world"
+        widget: "select"
+        options:
+          - { label: "現代", value: "modern" }
+          - { label: "葉塞大陸", value: "yese" }
+          - { label: "樂園", value: "paradise" }
+          - { label: "靈界", value: "spirit" }
+          - { label: "霧隱都市", value: "mist" }
+          - { label: "神棄之地", value: "godforsaken" }
+          - { label: "千之帝國", value: "empire" }
+      - { label: "章節排序", name: "order", widget: "number", value_type: "int", default: 1, min: 1 }
+      - { label: "日期", name: "date", widget: "datetime", required: false }
+      - { label: "簡介", name: "description", widget: "text", required: false }
+      - { label: "正文", name: "body", widget: "markdown" }
+      - { label: "公開顯示", name: "published", widget: "boolean", default: true }
+
+  # 後日談
+  - name: "after_stories"
+    label: "後日談"
+    folder: "content/after-stories"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "標題", name: "title", widget: "string" }
+      - label: "世界線"
+        name: "world"
+        widget: "select"
+        options:
+          - { label: "現代", value: "modern" }
+          - { label: "葉塞大陸", value: "yese" }
+          - { label: "樂園", value: "paradise" }
+          - { label: "靈界", value: "spirit" }
+          - { label: "霧隱都市", value: "mist" }
+          - { label: "神棄之地", value: "godforsaken" }
+          - { label: "千之帝國", value: "empire" }
+      - { label: "日期", name: "date", widget: "datetime", required: false }
+      - { label: "簡介", name: "description", widget: "text", required: false }
+      - { label: "正文", name: "body", widget: "markdown" }
+      - { label: "公開顯示", name: "published", widget: "boolean", default: true }
+
+  # 日常相簿
+  - name: "daily_life"
+    label: "日常相簿"
+    folder: "content/daily-life"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - { label: "標題", name: "title", widget: "string", required: false }
+      - label: "世界線"
+        name: "world"
+        widget: "select"
+        options:
+          - { label: "現代", value: "modern" }
+          - { label: "葉塞大陸", value: "yese" }
+          - { label: "樂園", value: "paradise" }
+          - { label: "靈界", value: "spirit" }
+          - { label: "霧隱都市", value: "mist" }
+          - { label: "神棄之地", value: "godforsaken" }
+          - { label: "千之帝國", value: "empire" }
+      - { label: "日期", name: "date", widget: "datetime", required: false }
+      - { label: "說明", name: "description", widget: "text", required: false }
+      - label: "圖片"
+        name: "images"
+        widget: "list"
+        field:
+          label: "圖片"
+          name: "image"
+          widget: "image"
+      - { label: "公開顯示", name: "published", widget: "boolean", default: true }

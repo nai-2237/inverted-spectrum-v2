@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contents — Inverted Spectrum</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/story-pages.css">
+  <link rel="stylesheet" href="./css/story-articles.css">
+  <link rel="stylesheet" href="./css/story-gallery.css">
+  <script src="./js/story-articles.js" defer></script>
+  <script src="./js/story-gallery.js" defer></script>
+</head>
+<body class="story-detail-page" data-page="category">
+  <header class="site-header">
+    <a class="logo" href="./index.html#home">Inverted Spectrum</a>
+    <a class="story-header-back" id="headerBack" href="./index.html#story">BACK <span class="story-icon story-icon-up" aria-hidden="true"></span></a>
+  </header>
+  <main class="article-shell">
+    <p class="article-kicker" id="categoryWorld">MAIN STORY</p>
+    <h1 id="categoryTitle">讀取中…</h1>
+    <p class="article-subtitle" id="categoryEnglish"></p>
+    <div class="article-rule"></div>
+    <div class="article-list" id="articleList" aria-live="polite"></div>
+    <div class="daily-gallery" id="dailyGallery" hidden></div>
+    <p class="article-empty" id="articleStatus" role="status" hidden></p>
+    <a class="article-return" id="backToWorld" href="./story.html?id=modern"><span class="story-icon story-icon-left" aria-hidden="true"></span> 返回世界線目錄</a>
+  </main>
+  <div class="gallery-lightbox" id="galleryLightbox" role="dialog" aria-modal="true" aria-label="日常相簿圖片檢視" hidden>
+    <div class="gallery-modal">
+      <div class="gallery-top"><span id="galleryWorldLabel">DAILY LIFE</span><button type="button" id="galleryClose" aria-label="關閉圖片"><span aria-hidden="true">×</span></button></div>
+      <div class="gallery-stage" id="galleryStage">
+        <button type="button" class="gallery-arrow" id="galleryPrev" aria-label="上一張"><span class="story-icon story-icon-left" aria-hidden="true"></span></button>
+        <img id="galleryImage" alt="">
+        <button type="button" class="gallery-arrow" id="galleryNext" aria-label="下一張"><span class="story-icon story-icon-right" aria-hidden="true"></span></button>
+      </div>
+      <div class="gallery-counter" id="galleryCounter"></div>
+      <div class="gallery-info"><h2 id="galleryTitle"></h2><p id="galleryDate"></p><p id="galleryDescription"></p></div>
+    </div>
+  </div>
+</body>
+</html>

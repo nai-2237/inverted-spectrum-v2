@@ -1,0 +1,286 @@
+
+/* ========================================
+   TOGETHER / 共同設定
+======================================== */
+
+.together-page {
+  background: #faf7f4;
+  color: #67554e;
+}
+
+.together-page .site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.together-back {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* HERO */
+
+.together-hero {
+  position: relative;
+  height: 85svh;
+  min-height: 430px;
+  overflow: hidden;
+  background: #d9c6c0;
+}
+
+.together-hero-image {
+  position: absolute;
+  inset: 0;
+
+  background-image: url("../assets/images/together.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.together-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to bottom,
+    transparent 45%,
+    rgba(250, 247, 244, .3) 70%,
+    #faf7f4 100%
+  );
+
+  pointer-events: none;
+}
+
+.together-hero-content {
+  position: absolute;
+  z-index: 2;
+  left: 8%;
+  bottom: 45px;
+}
+
+.together-eyebrow {
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.together-hero-content h1 {
+  font-size: clamp(32px, 7vw, 60px);
+  font-weight: 400;
+  letter-spacing: 4px;
+  margin: 10px 0;
+}
+
+.together-hero-content p {
+  font-size: 13px;
+  letter-spacing: 3px;
+}
+
+/* READING */
+
+.together-reading {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 55px 22px 90px;
+}
+
+.together-heading {
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.together-heading span,
+.together-entry-heading span {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #b18d88;
+}
+
+.together-heading h2 {
+  font-size: 29px;
+  font-weight: 400;
+  margin-top: 12px;
+}
+
+.together-entry {
+  margin-bottom: 65px;
+}
+
+.together-entry-heading {
+  margin-bottom: 22px;
+}
+
+.together-entry-heading h3 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 9px;
+}
+
+/* 代表統整 */
+
+.together-panel {
+  background: rgba(255, 255, 255, .65);
+  border: 1px solid #e5d8d3;
+  border-radius: 8px;
+  padding: 8px 22px;
+}
+
+.together-info-row {
+  display: grid;
+  grid-template-columns: 90px minmax(0, 1fr);
+  gap: 15px;
+  align-items: start;
+  padding: 18px 0;
+  border-bottom: 1px solid #eee5e1;
+}
+
+.together-info-row:last-child {
+  border-bottom: none;
+}
+
+.together-info-row > span {
+  color: #ad8d87;
+  font-size: 12px;
+}
+
+.together-info-row p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.9;
+  overflow-wrap: anywhere;
+}
+
+/* 稱呼 */
+
+.together-nicknames {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.together-nickname-card {
+  background: rgba(255, 255, 255, .65);
+  border: 1px solid #e5d8d3;
+  border-radius: 8px;
+  padding: 28px 18px;
+  text-align: center;
+}
+
+.nickname-direction {
+  font-size: 21px;
+}
+
+.nickname-caption {
+  margin: 13px 0 20px;
+  color: #ad8d87;
+  font-size: 11px;
+}
+
+.nickname-content {
+  font-size: 13px;
+  line-height: 2;
+}
+
+/* 第一次 */
+
+.together-timeline {
+  position: relative;
+  margin-left: 7px;
+  padding-left: 27px;
+  border-left: 1px solid #d8bbb6;
+}
+
+.together-memory {
+  position: relative;
+  padding: 0 0 38px;
+}
+
+.together-memory:last-child {
+  padding-bottom: 0;
+}
+
+.together-memory::before {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: 5px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #c9a39e;
+  border: 2px solid #faf7f4;
+}
+
+.memory-date {
+  display: block;
+  color: #ad8d87;
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.together-memory h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 10px;
+}
+
+.together-memory p {
+  font-size: 13px;
+  line-height: 2;
+  margin: 0;
+}
+
+/* 日常互動 */
+
+.together-prose {
+  padding: 22px;
+}
+
+.together-prose p {
+  font-size: 13px;
+  line-height: 2.2;
+  margin: 0 0 16px;
+}
+
+.together-prose p:last-child {
+  margin-bottom: 0;
+}
+
+/* BOTTOM NAV */
+
+.together-bottom-nav {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.together-bottom-nav a {
+  color: #9e7b75;
+  text-decoration: none;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .together-hero {
+    height: 75svh;
+    min-height: 400px;
+  }
+
+  .together-reading {
+    padding: 40px 20px 70px;
+  }
+
+  .together-nicknames {
+    grid-template-columns: 1fr;
+  }
+
+  .together-info-row {
+    grid-template-columns: 70px minmax(0, 1fr);
+  }
+}

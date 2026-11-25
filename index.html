@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f3eae5">
+  <title>Inverted Spectrum</title>
+  <link rel="stylesheet" href="./css/style.css">
+
+<link rel="stylesheet" href="./css/other.css">
+
+  <script src="./js/main.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="#home" class="logo">Inverted Spectrum</a>
+  <button class="menu-toggle" id="menuToggle"
+    aria-label="開啟選單" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<nav class="drawer" id="drawer">
+  <a href="#home">HOME</a>
+  <a href="#character">CHARACTER</a>
+  <a href="#timeline">TIMELINE</a>
+  <a href="#story">STORY</a>
+  <a href="#paro">PARO</a>
+  <a href="#other">OTHER</a>
+</nav>
+<div class="drawer-overlay" id="drawerOverlay"></div>
+
+<main>
+
+  <section id="home" class="hero">
+    <div class="hero-art"></div>
+    <div class="hero-content">
+      <p class="eyebrow">AYN × MARLOWE</p>
+      <h1>Inverted<br>Spectrum</h1>
+      <p>關於艾因與穆綺，以及他們所經歷的所有故事。</p>
+      <a href="#character" class="text-link">EXPLORE ↓</a>
+    </div>
+  </section>
+
+  <section id="character" class="section character-section">
+    <div class="section-heading">
+      <span>01 / CHARACTER</span>
+      <h2>Characters</h2>
+    </div>
+
+    <div class="character-stage">
+      <div class="character-art">
+        <span id="characterPlaceholder">CHARACTER ART</span>
+      </div>
+
+
+<div class="character-side-controls">
+  <button id="characterPrev" class="character-side-arrow prev"
+    type="button" aria-label="上一位人物">
+    <span aria-hidden="true"></span>
+  </button>
+
+  <button id="characterNext" class="character-side-arrow next"
+    type="button" aria-label="下一位人物">
+    <span aria-hidden="true"></span>
+  </button>
+</div>
+
+
+      <div class="character-info">
+
+<span class="character-page-number" id="characterCounter">
+  01 / 02
+</span>
+
+        <p id="characterEnglish">AYN</p>
+        <h3 id="characterName">艾因</h3>
+        
+<a href="#" class="text-link profile-link" id="profileLink">
+  VIEW PROFILE
+  <span class="profile-link-arrow" aria-hidden="true"></span>
+</a>
+
+        
+<a href="./together.html" class="together-link">
+  TOGETHER / 共同設定
+</a>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section id="timeline" class="section timeline-section">
+    <div class="section-heading">
+      <span>02 / TIMELINE</span>
+      <h2>Our Timeline</h2>
+    </div>
+
+    <div class="timeline-layout">
+      <div class="timeline-track" id="timelineTrack">
+  <div class="timeline-line"></div>
+  <div class="timeline-progress" id="timelineProgress"></div>
+  <div id="timelineMarkers" class="timeline-markers"></div>
+</div>
+
+      <div class="timeline-content">
+        <p class="eyebrow" id="timelineNumber">CHAPTER 01</p>
+        <h3 id="timelineTitle">相識</h3>
+        <p id="timelineDescription">故事從這裡開始。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="story" class="section story-section">
+   
+    
+<div class="story-showcase">
+
+  
+<div class="story-visual" id="storyVisual">
+  <div class="story-image" id="storyImage">
+    <span>STORY VISUAL</span>
+  </div>
+
+  
+<button class="story-arrow prev" id="storyPrev"
+  type="button" aria-label="上一個故事">
+  <span aria-hidden="true"></span>
+</button>
+
+<button class="story-arrow next" id="storyNext"
+  type="button" aria-label="下一個故事">
+  <span aria-hidden="true"></span>
+</button>
+
+
+  <div class="story-details">
+    <p class="eyebrow" id="storyCategory">WORLD / 01</p>
+    <h3 id="storyTitle">現代</h3>
+    <p id="storyDescription">這裡顯示故事的簡短介紹。</p>
+    <a
+  id="storyEntry"
+  class="story-entry-link"
+  href="./story.html?id=modern"
+>
+  ENTER THIS WORLD
+  <span class="story-icon story-icon-up" aria-hidden="true"></span>
+</a>
+  </div>
+</div>
+
+
+  <div class="story-pagination" id="storyPagination"></div>
+</div>
+
+
+  </section>
+
+  
+
+
+
+<section id="paro" class="paro-section">
+
+  <a href="./paro.html?id=master-servant"
+     class="paro-feature">
+
+    <div class="paro-photo"></div>
+
+    <div class="paro-feature-content">
+      <span class="paro-number">01 / PARO</span>
+
+      <h2>非典型主僕關係</h2>
+
+      <span class="paro-enter">
+        VIEW STORY
+        <span aria-hidden="true">→</span>
+      </span>
+    </div>
+
+  </a>
+
+</section>
+
+
+
+
+
+  
+<section id="other" class="section other-section">
+
+  <div class="other-container">
+
+    <div class="other-heading">
+      <span>05 / OTHER</span>
+      <h2>Other Archives</h2>
+      <p>PERSONAL ARCHIVE — INDEX</p>
+    </div>
+
+    <nav class="other-index">
+
+      <a href="./other.html?page=notice" class="other-item">
+        <span class="other-number">01</span>
+        <span class="other-item-title">
+          <strong>注意事項</strong>
+          <small>NOTICES</small>
+        </span>
+        
+<span class="other-arrow" aria-hidden="true"></span>
+
+      </a>
+
+      <a href="./other.html?page=copyright" class="other-item">
+        <span class="other-number">02</span>
+        <span class="other-item-title">
+          <strong>版權聲明</strong>
+          <small>COPYRIGHT</small>
+        </span>
+        
+<span class="other-arrow" aria-hidden="true"></span>
+
+      </a>
+
+      <a href="./other.html?page=notes" class="other-item">
+        <span class="other-number">03</span>
+        <span class="other-item-title">
+          <strong>碎碎念</strong>
+          <small>NOTES</small>
+        </span>
+        
+<span class="other-arrow" aria-hidden="true"></span>
+
+      </a>
+
+      <!-- 飯友：雲端連結尚未填入 -->
+      <a href="#" class="other-item other-item-disabled"
+         aria-disabled="true">
+        <span class="other-number">04</span>
+        <span class="other-item-title">
+          <strong>飯友</strong>
+          <small>CLOUD ARCHIVE</small>
+        </span>
+        
+<span class="other-arrow" aria-hidden="true"></span>
+
+      </a>
+
+    </nav>
+
+    <p class="other-signature">
+      INVERTED SPECTRUM · AYN × MARLOWE
+    </p>
+
+  </div>
+
+</section>
+
+
+</main>
+
+<footer class="site-footer">
+  <p>INVERTED SPECTRUM</p>
+  <span>AYN × MARLOWE</span>
+</footer>
+
+</body>
+</html>

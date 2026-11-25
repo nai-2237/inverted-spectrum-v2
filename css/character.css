@@ -1,0 +1,205 @@
+
+/* CHARACTER DETAIL */
+
+.profile-page {
+  background: var(--paper);
+}
+
+.profile-back {
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+/* 人物展示 */
+
+.profile-hero {
+  position: relative;
+  min-height: 650px;
+  height: 85svh;
+  background: var(--paper);
+  overflow: hidden;
+}
+
+.profile-art {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(145deg, #a88e85, #55413b);
+  background-size: cover;
+  background-position: center top;
+}
+
+.profile-art::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(30,22,21,.15) 0%,
+    transparent 35%,
+    rgba(250,245,240,.15) 65%,
+    var(--paper) 100%
+  );
+}
+
+.profile-hero-content {
+  position: absolute;
+  z-index: 2;
+  bottom: 9%;
+  left: 8%;
+  right: 8%;
+  color: var(--brown);
+}
+
+.profile-hero-content h1 {
+  font-size: clamp(50px, 13vw, 85px);
+  font-weight: 400;
+  margin: 10px 0 20px;
+}
+
+.profile-hero-content > p:last-child {
+  font-size: 13px;
+  line-height: 2.2;
+  max-width: 480px;
+  white-space: pre-line;
+}
+
+/* 設定閱讀區 */
+
+.profile-reading {
+  position: relative;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 30px 8% 100px;
+}
+
+.profile-reading-heading {
+  margin-bottom: 65px;
+}
+
+.profile-reading-heading span {
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: var(--muted);
+}
+
+.profile-reading-heading h2 {
+  font-size: 34px;
+  font-weight: 400;
+  font-style: italic;
+  margin: 15px 0;
+}
+
+.profile-entry {
+  padding: 30px 0 45px;
+  border-top: 1px solid var(--line);
+}
+
+.profile-entry-number {
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: var(--muted);
+}
+
+.profile-entry h3 {
+  font-size: 25px;
+  font-weight: 400;
+  margin: 15px 0 24px;
+}
+
+.profile-entry-content {
+  font-size: 14px;
+  line-height: 2.4;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+  color: #66534c;
+}
+
+/* 底部人物切換 */
+
+.profile-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border-top: 1px solid var(--line);
+  padding-top: 35px;
+}
+
+.profile-navigation a,
+.profile-navigation button {
+  border: none;
+  background: none;
+  padding: 0;
+  color: var(--brown);
+  font-size: 10px;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.profile-navigation button {
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .profile-hero {
+    max-height: 900px;
+  }
+
+  .profile-hero-content {
+    left: max(8%, calc((100% - 700px) / 2));
+  }
+}
+
+
+.profile-reading-heading {
+  margin-bottom: 35px;
+}
+
+
+/* 基本資料：左右雙欄排版 */
+
+.profile-info-list {
+  display: block;
+  width: 100%;
+}
+
+.profile-info-list .profile-info-row {
+  display: grid;
+  grid-template-columns: minmax(90px, 35%) minmax(0, 1fr);
+  align-items: center;
+  column-gap: 20px;
+  width: 100%;
+  padding: 16px 0;
+  border-bottom: 1px solid #e9dfd9;
+}
+
+.profile-info-list .profile-info-row:last-child {
+  border-bottom: none;
+}
+
+.profile-info-list .profile-info-row > span:first-child {
+  text-align: left;
+  color: #a28b82;
+}
+
+.profile-info-list .profile-info-row > span:last-child {
+  text-align: right;
+  color: #594b46;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .profile-info-list .profile-info-row {
+    grid-template-columns: minmax(85px, 40%) minmax(0, 1fr);
+    column-gap: 12px;
+    padding: 14px 0;
+  }
+}
+
+
+/* 縮小基本資料標題與內容的間距 */
+.profile-info-list {
+  margin-top: -50px;
+}

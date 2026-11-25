@@ -1,0 +1,24 @@
+/* DAILY LIFE — 雙欄瀑布流與米白畫廊燈箱 */
+.daily-gallery{columns:2;column-gap:22px;margin-top:28px}
+.daily-gallery[hidden],.gallery-lightbox[hidden]{display:none!important}
+.gallery-tile{display:block;break-inside:avoid;width:100%;padding:0;margin:0 0 30px;border:0;background:none;color:inherit;text-align:left;cursor:pointer;font:inherit}
+.gallery-cover{display:block;position:relative;overflow:hidden;background:#eee5df}
+.gallery-cover img{display:block;width:100%;height:auto}
+.gallery-count{position:absolute;top:12px;right:12px;padding:5px 9px;background:rgba(250,245,240,.9);color:#55413b;font:11px Georgia,serif;letter-spacing:1px}
+.gallery-tile-title{display:block;margin-top:11px;font-size:13px;line-height:1.7}
+.gallery-tile:focus-visible,.gallery-arrow:focus-visible,#galleryClose:focus-visible{outline:2px solid #9c8078;outline-offset:4px}
+body.gallery-open{overflow:hidden}
+.gallery-lightbox{position:fixed;inset:0;z-index:9999;background:rgba(246,240,235,.98);overflow-y:auto;color:#55413b}
+.gallery-modal{width:min(1100px,94%);min-height:100%;margin:0 auto;display:flex;flex-direction:column;padding:22px 0 42px;box-sizing:border-box}
+.gallery-top{display:flex;align-items:center;justify-content:space-between;gap:20px;color:#9c8078;font:11px Georgia,serif;letter-spacing:2px}
+#galleryClose{border:0;background:none;color:#55413b;font-size:30px;line-height:1;cursor:pointer;padding:5px 10px}
+.gallery-stage{display:grid;grid-template-columns:46px minmax(0,1fr) 46px;align-items:center;gap:10px;min-height:0;flex:1;margin:24px 0 0}
+.gallery-stage img{display:block;max-width:100%;max-height:min(68vh,850px);width:auto;height:auto;object-fit:contain;margin:auto}
+.gallery-arrow{display:grid;place-items:center;width:42px;height:46px;border:1px solid #d8c8bf;background:transparent;color:#55413b;cursor:pointer}
+.gallery-arrow[hidden]{visibility:hidden;display:block}
+.gallery-counter{text-align:center;font:12px Georgia,serif;letter-spacing:2px;color:#9c8078;margin-top:14px}
+.gallery-counter[hidden],.gallery-info [hidden]{display:none}
+.gallery-info{text-align:center;margin:15px auto 0;max-width:620px}
+.gallery-info h2{font-size:19px;font-weight:400;margin:0 0 8px}
+.gallery-info p{font-size:12px;line-height:1.9;color:#9c8078;margin:4px 0}
+@media(max-width:600px){.daily-gallery{column-gap:12px}.gallery-tile{margin-bottom:20px}.gallery-count{top:7px;right:7px;padding:4px 6px;font-size:10px}.gallery-modal{width:96%;padding-top:12px}.gallery-stage{grid-template-columns:30px minmax(0,1fr) 30px;gap:2px}.gallery-arrow{width:30px;height:38px;border:0}.gallery-stage img{max-height:70vh}}

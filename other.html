@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Other Archives — Inverted Spectrum</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/other.css">
+</head>
+
+<body class="other-reading-page">
+
+  <header class="site-header">
+    <a href="./index.html#home" class="logo">
+      Inverted Spectrum
+    </a>
+
+    <a href="./index.html#other" class="other-back">
+      ← BACK
+    </a>
+  </header>
+
+  <main class="other-reading">
+
+    <!-- 注意事項 -->
+    <article class="other-article" id="notice">
+
+      <div class="other-article-heading">
+        <span>01 / NOTICES</span>
+        <h1>注意事項</h1>
+      </div>
+
+      <div class="other-article-body">
+        <p>本網站由gpt代碼+人類產出圖文完成，網站架構排版參考二由官網，參考隨意，但請不要直接融給ai；</p>
+        <p>本網站原創設定/圖文禁止一切，也請麻煩不要代入男女任何一方；</p>
+        <p>家產（尤其paro）可能含有DS、DDLG、重男重女等上得了檯面和上不了檯面的內容，但不會出現18＋</p>
+        <p>這是我的夢向、我的理解、我的呈現，請不要對此指指點點，若有不喜不適退出即可；</p>
+        <p>感謝閱讀。</p>
+      </div>
+
+    </article>
+
+    <!-- 版權聲明 -->
+    <article class="other-article" id="copyright">
+
+      <div class="other-article-heading">
+        <span>02 / COPYRIGHT</span>
+        <h1>版權聲明</h1>
+      </div>
+
+      <div class="other-article-body">
+        <p>在這裡填寫網站的版權聲明與使用規範。</p>
+      </div>
+
+    </article>
+
+    <!-- 碎碎念 -->
+    <article class="other-article" id="notes">
+
+      <div class="other-article-heading">
+        <span>03 / NOTES</span>
+        <h1>碎碎念</h1>
+      </div>
+
+      <div class="other-article-body">
+        <p>在這裡寫下想說的話。</p>
+        <p>不需要日期，也不用分成多篇文章。</p>
+        <p>只要像平常寫文章一樣，自由新增段落就可以了。</p>
+      </div>
+
+    </article>
+
+    <nav class="other-reading-nav">
+      <a href="./index.html#other">
+        ← BACK TO OTHER
+      </a>
+    </nav>
+
+  </main>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const page = params.get("page") || "notice";
+
+    const allowedPages = ["notice", "copyright", "notes"];
+    const currentPage = allowedPages.includes(page)
+      ? page
+      : "notice";
+
+    document.querySelectorAll(".other-article").forEach(article => {
+      article.hidden = article.id !== currentPage;
+    });
+
+    const title = document.querySelector(
+      "#" + currentPage + " h1"
+    ).textContent;
+
+    document.title = title + " — Inverted Spectrum";
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3eae5">
+  <title>Main Story — Inverted Spectrum</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/story-pages.css">
+  <script src="./js/story-pages.js" defer></script>
+</head>
+
+<body class="story-detail-page">
+  <header class="site-header">
+    <a class="logo" href="./index.html#home">
+      Inverted Spectrum
+    </a>
+    <a class="story-header-back" href="./index.html#story">
+      BACK <span class="story-icon story-icon-up" aria-hidden="true"></span>
+    </a>
+  </header>
+
+  <main class="story-book" id="storyBook">
+
+    <div class="story-book-topline">
+      <span>INVERTED SPECTRUM</span>
+      <span id="worldVolume">VOL. — / 07</span>
+    </div>
+
+    <div class="story-book-intro">
+      <span class="story-book-kicker" id="worldNumber">
+        MAIN STORY
+      </span>
+
+      <h1 id="worldTitle">讀取中…</h1>
+
+      <p class="story-book-english" id="worldEnglish"></p>
+
+      <p
+        class="story-book-description"
+        id="worldDescription"
+        hidden
+      ></p>
+    </div>
+
+    <div class="story-book-contents">
+      <p class="story-book-caption">CONTENTS / 目錄</p>
+
+      <nav id="worldContents" aria-label="世界線內容分類">
+
+        <a class="story-book-item" href="#" data-category="excerpt">
+          <span class="story-book-num">01</span>
+          <span class="story-book-item-text">
+            <strong>正片截取</strong>
+            <small>EXCERPTS</small>
+          </span>
+          <span class="story-icon story-icon-up" aria-hidden="true"></span>
+        </a>
+
+        <a class="story-book-item" href="#" data-category="after">
+          <span class="story-book-num">02</span>
+          <span class="story-book-item-text">
+            <strong>後日談</strong>
+            <small>AFTER STORIES</small>
+          </span>
+          <span class="story-icon story-icon-up" aria-hidden="true"></span>
+        </a>
+
+        <a class="story-book-item" href="#" data-category="daily">
+          <span class="story-book-num">03</span>
+          <span class="story-book-item-text">
+            <strong>日常</strong>
+            <small>DAILY LIFE</small>
+          </span>
+          <span class="story-icon story-icon-up" aria-hidden="true"></span>
+        </a>
+
+      </nav>
+    </div>
+
+    <div class="story-book-bottomline">
+      <span>AYN × MARLOWE</span>
+      <span id="worldPage">— 01 —</span>
+    </div>
+
+    <nav class="story-world-nav" aria-label="切換世界線">
+  <a id="previousWorld" href="#">
+    <span class="story-icon story-icon-left" aria-hidden="true"></span>
+    PREVIOUS
+  </a>
+
+  <a href="./index.html#story">ALL WORLDS</a>
+
+  <a id="nextWorld" href="#">
+    NEXT
+    <span class="story-icon story-icon-right" aria-hidden="true"></span>
+  </a>
+</nav>
+
+    <p
+      class="story-book-error"
+      id="storyError"
+      role="status"
+      hidden
+    ></p>
+
+  </main>
+</body>
+</html>

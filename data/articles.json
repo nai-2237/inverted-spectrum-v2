@@ -1,0 +1,28 @@
+[
+  {
+    "id": "modern-excerpt-01",
+    "world": "modern",
+    "category": "excerpt",
+    "title": "第一章｜相遇",
+    "summary": "示範文章，可自行替換。",
+    "date": "2026-01-01",
+    "order": 1,
+    "published": true,
+    "content": [
+      { "type": "text", "text": "這裡是第一段正文。\n同一段中的換行會被保留。" },
+      { "type": "text", "text": "這裡是第二段正文。可以繼續增加段落。" }
+    ]
+  },
+  {
+    "id": "modern-after-01",
+    "world": "modern",
+    "category": "after",
+    "title": "後日談｜某個午後",
+    "summary": "後日談示範。",
+    "date": "2026-11-01",
+    "published": true,
+    "content": [
+      { "type": "text", "text": "這裡放後日談正文。" }
+    ]
+  }
+]

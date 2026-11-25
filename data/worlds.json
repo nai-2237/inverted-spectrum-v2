@@ -1,0 +1,52 @@
+
+[
+  {
+    "id": "modern",
+    "title": "現代",
+    "english": "MODERN WORLD",
+    "cover": "./assets/images/story-modern.jpg",
+    "description": ""
+  },
+  {
+    "id": "yese",
+    "title": "葉塞大陸",
+    "english": "YESE CONTINENT",
+    "cover": "./assets/images/story-yese.jpg",
+    "description": ""
+  },
+  {
+    "id": "paradise",
+    "title": "樂園",
+    "english": "PARADISE",
+    "cover": "./assets/images/story-paradise.jpg",
+    "description": ""
+  },
+  {
+    "id": "spirit",
+    "title": "靈界",
+    "english": "SPIRIT WORLD",
+    "cover": "./assets/images/story-spirit.jpg",
+    "description": ""
+  },
+  {
+    "id": "mist",
+    "title": "霧隱都市",
+    "english": "MIST CITY",
+    "cover": "./assets/images/story-mist.jpg",
+    "description": ""
+  },
+  {
+    "id": "godforsaken",
+    "title": "神棄之地",
+    "english": "GODFORSAKEN LAND",
+    "cover": "./assets/images/story-godforsaken.jpg",
+    "description": ""
+  },
+  {
+    "id": "empire",
+    "title": "千之帝國",
+    "english": "EMPIRE",
+    "cover": "./assets/images/story-empire.jpg",
+    "description": ""
+  }
+]
